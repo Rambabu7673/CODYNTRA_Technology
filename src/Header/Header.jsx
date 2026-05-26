@@ -73,7 +73,11 @@ const Header = () => {
         >
           {/* Logo */}
           <div className="cursor-pointer" onClick={() => navigate("/")}>
-            <img src={logo} alt="" className="h-20 w-20 object-contain hover:rotate-45 transition-all duration-500" />
+            <img
+              src={logo}
+              alt=""
+              className="h-20 w-20 object-contain hover:rotate-45 transition-all duration-500"
+            />
           </div>
 
           {/* Desktop Menu */}
@@ -149,7 +153,7 @@ const Header = () => {
             {user ? (
               <div className="relative group border-4 border-yellow-300 rounded-full">
                 <img
-                  src={`http://localhost:3000/${user.profileImage}`}
+                  src={`https://codeyntra-backend-01.onrender.com/${user.profileImage}`}
                   alt=""
                   onClick={handleLogout}
                   className="
@@ -266,7 +270,7 @@ const Header = () => {
               {user ? (
                 <div className="flex items-center gap-3">
                   <img
-                    src={`http://localhost:3000/${user.profileImage}`}
+                    src={`https://codeyntra-backend-01.onrender.com/${user.profileImage}`}
                     alt=""
                     className="
                           w-12
