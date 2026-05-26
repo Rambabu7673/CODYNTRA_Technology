@@ -1,6 +1,6 @@
 import axios from "axios";
 const response = axios.create({
-  baseURL: "http://localhost:3000/plan",
-})
+  baseURL: "https://codeyntra-backend-01.onrender.com/plan",
+});
 
 export default response
