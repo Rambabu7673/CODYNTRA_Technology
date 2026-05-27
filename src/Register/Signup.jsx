@@ -54,7 +54,6 @@ const Signup = ({ setIsLogin = () => {} }) => {
       alert("Signup Success ✅");
 
       // Login Form Show
-      setIsLogin(true);
     } catch (error) {
       console.log(error);
 

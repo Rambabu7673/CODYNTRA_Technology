@@ -43,12 +43,15 @@ const userLogin = ({ setIsLogin = () => { } }) => {
   return (
     <div
       className="
-      w-[400px]
+      lg:w-[400px]
+      w-full
       bg-white/10
       backdrop-blur-xl
       p-6
       rounded-2xl
       shadow-2xl
+      flex 
+      flex-col
     "
     >
       <h1 className="text-3xl font-bold text-white text-center mb-6">Login</h1>

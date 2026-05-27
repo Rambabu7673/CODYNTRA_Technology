@@ -228,15 +228,21 @@ const Header = () => {
               left-0
               w-full
               z-50
+              bg-white/10
+             
+              text-white
+             
             "
         >
           <div
             className="
-                bg-black/20
+                fixed
+                w-full
                 backdrop-blur-lg
                 text-white
                 p-5
-                rounded-b-2xl
+               bg-black/50
+          
               "
           >
             <ul className="flex flex-col gap-5 text-lg">
@@ -268,7 +274,7 @@ const Header = () => {
             {/* Mobile Auth */}
             <div className="mt-6">
               {user ? (
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 justify-around">
                   <img
                     src={`https://codeyntra-backend-01.onrender.com/${user.profileImage}`}
                     alt=""
@@ -281,7 +287,7 @@ const Header = () => {
                         "
                   />
 
-                  <div>
+                  <div >
                     <h1 className="font-semibold">{user.name}</h1>
 
                     <button
@@ -306,10 +312,11 @@ const Header = () => {
                         bg-white
                         text-black
                         py-2
-                        rounded-lg
+                        rounded
+                        font-semibold
                       "
                 >
-                  Login / Signup
+                  Register
                 </button>
               )}
             </div>
@@ -343,7 +350,8 @@ const Header = () => {
               onClick={() => setShowAuth(false)}
               className="
                   absolute
-                  top-20
+                
+                  top-10
                   -right-2
                   bg-red-500
                   text-white
