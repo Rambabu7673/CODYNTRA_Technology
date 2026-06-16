@@ -26,7 +26,7 @@ const CreateJob = () => {
     setLoading(true);
 
     try {
-      const res = await update.post("/user/createJob", form);
+      const res = await update.post("/user/updateJob", form);
 
       alert(res.data.message);
 
