@@ -253,19 +253,8 @@ const Princing = () => {
               {plan.type}
             </h1>
 
-            {/* Price */}
-            <h2
-              className="
-                text-orange-500
-                text-3xl
-                font-extrabold
-                mt-4
-                relative
-                z-10
-              "
-            >
-              ₹{plan.price}
-            </h2>
+            
+            
 
             {/* Features */}
             <div
@@ -322,7 +311,7 @@ const Princing = () => {
 
                   type: plan.type,
 
-                  price: plan.price,
+                  
                 });
 
                 setShowPopup(true);

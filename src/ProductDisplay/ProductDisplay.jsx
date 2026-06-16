@@ -131,17 +131,7 @@ document.body.style.overflow = "hidden";
         {selectedPlan.type} Plan
       </h2>
 
-      <h3
-        className="
-          text-center
-          text-white
-          text-4xl
-          font-bold
-          mt-2
-        "
-      >
-        ₹{selectedPlan.price}
-      </h3>
+      x
 
       <p
         className="

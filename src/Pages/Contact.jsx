@@ -206,7 +206,7 @@ const Contact = () => {
               <textarea
                 rows="6"
                 name="message"
-                name="message"
+              
                 value={form.message}
                 onChange={handleInput}
                 placeholder=" PLEASE WRITE YOUR MESSAGE HERE ANYTHING YOU WANT TO SAY TO US "

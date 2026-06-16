@@ -9,9 +9,7 @@ import IsClientSolution from "./Features/IsClientSolution";
 import AboutUs from "./Pages/AboutUsCompany/AboutUs";
 import Contact from "./Pages/Contact";
 import JobForm from "./Pages/JobForm";
-
-
-
+import UpdateJob from "./IsCarrer/UpdateJob";
 
 const App = () => {
   return (
@@ -20,17 +18,15 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Container />} />
         <Route path="/princing" element={<Princing />} />
-
+        <Route path="/updateJob" element={<UpdateJob />} />
         <Route path="/CarrerGrow" element={<Career />} />
 
         <Route path="/isClientSolution" element={<IsClientSolution />} />
         <Route path="/aboutUs" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/jobForm" element={<JobForm />} />
-        
       </Routes>
       <Footer />
-      
     </>
   );
 };
